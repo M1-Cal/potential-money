@@ -1,1 +1,4 @@
-
+#AutoMLImageLabelerLocalModel localModel =
+    new AutoMLImageLabelerLocalModel.Builder()
+        .setAssetFilePath("manifest.json")
+        // or .setAbsoluteFilePath(absolute file path to manifest file)
