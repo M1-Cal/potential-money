@@ -1,0 +1,73 @@
+jobs:
+  component-A:
+    docker:
+      - image: 'circleci/node:10'
+    steps:
+      - checkout
+      - run: exit 0
+      - jira/notify
+    working_directory: ~/repo
+  component-B:
+    docker:
+      - image: 'circleci/node:10'
+    steps:
+      - checkout
+      - run: sleep 2
+      - jira/notify
+    working_directory: ~/repo
+  deploy:
+    docker:
+      - image: 'circleci/node:10'
+    steps:
+      - checkout
+      - run: echo "hi Jira"
+    working_directory: ~/repo
+  integration:
+    docker:
+      - image: 'circleci/node:10'
+    steps:
+      - checkout
+      - run: echo "hi Jira"
+      - jira/notify
+    working_directory: ~/repo
+orbs:
+  jira: circleci/jira@x.y.z
+version: 2.1
+workflows:
+  build-deploy:
+    jobs:
+      - component-A
+      - component-B
+      - integration:
+          requires:
+            - component-A
+            - component-B
+      - deploy:
+          name: Dev East
+          post-steps:
+            - jira/notify:
+                environment_type: development
+                job_type: deployment
+          requires:
+            - integration
+      - deploy:
+          name: Test East
+          post-steps:
+            - jira/notify:
+                environment_type: testing
+                job_type: deployment
+          requires:
+            - Dev East
+      - hold:
+          name: Verify
+          requires:
+            - Test East
+          type: approval
+      - deploy:
+          name: Prod East
+          post-steps:
+            - jira/notify:
+                environment_type: production
+                job_type: deployment
+          requires:
+            - Verify
