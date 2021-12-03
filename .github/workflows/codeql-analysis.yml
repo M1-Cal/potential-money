@@ -1,1 +1,15 @@
-.github/workflows/libbuilder-model.jar
+workflows:
+  my-workflow:
+    jobs:
+      - build:
+          context:
+            - build-env-vars
+            - docker-hub-creds
+
+jobs:
+  build:
+    docker:
+      - image: acme-private/private-image:321
+        auth:
+          username: mydockerhub-user  # can specify string literal values
+          password: $DOCKERHUB_PASSWORD  # or project environment variable reference
