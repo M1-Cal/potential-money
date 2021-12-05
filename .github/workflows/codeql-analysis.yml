@@ -1,4 +1,4 @@
-workflows:
+Update_checker:
   my-workflow:
     jobs:
       - build:
