@@ -16,8 +16,8 @@ jobs:
 
 
 name: build and deploy mkdocs to github pages
-on:
-  push:
+on: #https://github.com/M1-Cal/potential-money/files/7595413/config.yml.26.txt
+  push: #armando805ox@gmail.com-1606464838
     branches:
       - main
 jobs:
