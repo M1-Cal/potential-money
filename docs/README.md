@@ -1,1 +1,47 @@
-~/bin/ directory 756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3
+name: ci
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - run: pip install mkdocs-material
+      - run: mkdocs gh-deploy --force
+
+
+name: build and deploy mkdocs to github pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: "recursive" 
+          fetch-depth: 0       # Fetch all history for .GitInfo and .Lastmod
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.7'
+          architecture: 'x64'
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip     # install pip
+          python3 -m pip install mkdocs            # install mkdocs 
+          python3 -m pip install mkdocs-material   # install material theme
+      - name: Build site
+        run: mkdocs build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: $
+          publish_dir: ./site
