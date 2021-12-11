@@ -1,4 +1,20 @@
-workflows:
+workflows:language: node_js
+
+node_js:
+  - node
+  - 12
+  - 10
+
+os:
+  - linux
+
+cache:
+  directories:
+    - $HOME/.npm
+
+notifications:
+  email: false
+
   build: # This workflow will run on all branches 
     jobs:
       - test:
