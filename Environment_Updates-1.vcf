@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION;TYPE=WORK:3.0
+FN;CHARSET=UTF-8:Fritz Thielemann
+N;CHARSET=UTF-8:Fritz Thielemann;;;;
+PROFILE:VCARD
+ADR;CHARSET=UTF-8:;;Rigaer Straße 8;Berlin;;10247;Germany
+EMAIL:support@travis-ci.org
+ORG;CHARSET=UTF-8:Travis CI
+URL:http://travis-ci.com
+END:VCARD
