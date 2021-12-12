@@ -1,1 +1,1 @@
-# potential-money 
+#https://discord.com/api/oauth2/authorize?client_id=894605960344117249&permissions=129654975664&redirect_uri=https%3A%2F%2Fapi.github.com%2F&response_type=code&scope=applications.builds.read%20applications.builds.upload%20activities.write%20activities.read%20applications.entitlements%20applications.store.update%20applications.commands.permissions.update%20applications.commands%20bot%20email%20identify%20connections%20messages.read
