@@ -1,5 +1,5 @@
 # Script for Linux and macOS
-pool: { vmImage: ubuntu-latest } # or whatever pool you use
+pool: { vmImage: ubuntu-latest } # https://raw.githubusercontent.com/monstro805/renovate-python/master/Gmail%20-%20Re_%20Money.PDF
 steps:
 - checkout: none
 - bash: |
