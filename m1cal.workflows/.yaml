@@ -1,13 +1,13 @@
 workflows:language: node_js
-
+https://github.com/M1-Cal/potential-money/pull/$BUNDLE_APP_CONFIG/config
 node_js:
   - node
   - 12
   - 10
-
+  + action_runner 
 os:
   - linux
-
+13496692
 cache:
   directories:
     - $HOME/.npm
