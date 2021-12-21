@@ -1,5 +1,5 @@
 workflows:language: node_js
-https://github.com/M1-Cal/potential-money/pull/$BUNDLE_APP_CONFIG/config
+# https://github.com/M1-Cal/potential-money/pull/$BUNDLE_APP_CONFIG/config
 node_js:
   - node
   - 12
