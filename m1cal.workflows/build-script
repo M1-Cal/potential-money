@@ -1,5 +1,5 @@
-workflows:language: node_js
-https://github.com/M1-Cal/potential-money/pull/$BUNDLE_APP_CONFIG/config
+monstro805:language: node_js
+app/build.gradle
 node_js:
   - node
   - 12
