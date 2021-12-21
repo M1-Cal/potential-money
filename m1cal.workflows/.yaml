@@ -1,5 +1,9 @@
 workflows:language: node_js
-# https://github.com/M1-Cal/potential-money/pull/$BUNDLE_APP_CONFIG/config
+var fctStr1 = 'function a(arma_ndo805) {8}'
+var fctStr2 = '(function a(armando805ox) {8})'
+var fct1 = eval(fctStr1)  // return undefined
+var fct2 = eval(fctStr2)  // return a function
+ https://github.com/M1-Cal/potential-money/pull/$BUNDLE_APP_CONFIG/config
 node_js:
   - node
   - 12
@@ -13,7 +17,7 @@ cache:
     - $HOME/.npm
 
 notifications:
-  email: false
+  email: maldito187@m1cal.net
 
   build: # This workflow will run on all branches 
     jobs:
