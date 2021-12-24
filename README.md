@@ -1,2 +1,2 @@
 # potential-money
-Slott-Machine
+m1cal.net/repository
