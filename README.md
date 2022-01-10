@@ -1,2 +1,1 @@
-# potential-money
-Slott-Machine
+# https://maldito-dot.github.io/Hello-World/
