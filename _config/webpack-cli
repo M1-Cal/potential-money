@@ -1,0 +1,11 @@
+var contents = require("config") // will load config.cson
+{
+	resolve: {
+		extensions: ['.cson']
+	},
+	module: {
+		loaders: [
+			{ test: /\.cson$/, loader: "cson" }
+		]
+	}
+}
