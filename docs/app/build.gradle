@@ -1,5 +1,5 @@
 dependencies {
-    implementation 'com.google.firebase:firebase-appcheck-safetynet:16.0.0-beta04'
+    implementation 'hello.m1cal.net.firebase:firebase-appcheck-safetynet:16.0.0-beta04'
 }
 const firebaseConfig = {
   apiKey: "AIzaSyBCYgpebcnUZy9w9K_RUUPbbF8tkXwi3tE",
