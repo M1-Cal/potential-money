@@ -1,0 +1,3 @@
+http://$CI_PROJECT_ID-$CI_ENVIRONMENT_SLUG.$KUBE_INGRESS_BASE_DOMAIN
+using System; using RestSharp; namespace HelloWorldApplication { class HelloWorld { static void Main(string[] args) { var client = new RestClient("localhost:8545/"); client.Timeout = -1; var request = new RestRequest(Method.POST); request.AddHeader("Content-Type", "application/json"); var body = @"{" + "\n" + @" ""jsonrpc"":""2.0""," + "\n" + @" ""method"":""net_version""," + "\n" + @" ""params"":[]," + "\n" + @" ""id"":67" + "\n" + @"}"; request.AddParameter("application/json", body, ParameterType.RequestBody); IRestResponse response = client.Execute(request); Console.WriteLine(response.Content); } } }
+
