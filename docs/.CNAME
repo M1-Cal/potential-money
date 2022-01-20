@@ -1,0 +1,2 @@
+http://%24ci_project_id-%24ci_environment_slug.%24kube_ingress_base_domain/
+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
