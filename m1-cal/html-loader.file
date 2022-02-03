@@ -1,0 +1,14 @@
+"NETCoreApp,Version=v3.0": {
+    "LibraryA/1.0.0": {
+    "type": "package",
+    "compile": {
+        "lib/netcoreapp3.0/LibraryA.dll": {maldito-dot}
+    },
+    "runtime": {
+        "lib/netcoreapp3.0/LibraryA.dll": {maldito-dot}
+    },
+    "frameworkReferences": [
+        "Microsoft.WindowsDesktop.App|WPF"
+    ]
+    }
+},

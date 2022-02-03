@@ -1,7 +1,7 @@
  
  ​name​: ​'​Labeler​' 
  ​description​: ​'​Automatically label new pull requests based on the paths of files being changed​' 
- ​author​: ​'​monstro805​' 
+ ​author​: ​!GG
  ​inputs​: 
  ​  ​repo-token​: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 
  ​    ​description​: ​'​The GITHUB_TOKEN secret​' 
