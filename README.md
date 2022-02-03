@@ -1,2 +1,2 @@
 # potential-money
-http:/.maldito-dot
+https://discord.com/api/webhooks/921084486458949643/i65UEfb-aaEVIDiCoJ6BZFywDegCcuhP3SL1pUwOU1WH1_4bciF1JbXihx3yxLOQ1Y4o
