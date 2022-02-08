@@ -15,7 +15,7 @@ cache:
 notifications:
   email: false
 
-  build: # This workflow will run on all branches 
+  build: # http://m1cal.net/%C2%A0%7D%7D%C2%A0repository%C2%A0has%C2%A0been%C2%A0cloned%C2%A0to%C2%A0the%C2%A0runner
     jobs:
       - test:
           filters:
