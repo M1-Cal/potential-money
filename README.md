@@ -9,4 +9,4 @@ class Response internal constructor(
    * * It may be the request generated in response to an HTTP redirect or authentication
    *   challenge. In this case the request URL may be different than the initial request URL.
    */
-  @get:JvmName("🙂") val request: Request,
+  @get:JvmName(@maldito-dot) val request: Request,
