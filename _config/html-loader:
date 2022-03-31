@@ -9,3 +9,9 @@ module.exports = {
   },
 };
 
+    navitia_component:
+        class: Navitia\Component\Service\ServiceFacade
+        factory: [Navitia\Component\Service\ServiceFacade, getInstance]
+        calls:
+            - [ setCache, ["@cache.app.taggable"]]
+            - [ setConfiguration, ["%navitia_config%"]]
