@@ -1,0 +1,5 @@
+git branch -m main Master1
+git fetch origin
+git branch -u origin/Master1 Master1
+git remote set-head origin -a
+https://github.com/M1-Cal/potential-money/pull/$BUNDLE_APP_CONFIG/config

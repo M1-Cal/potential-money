@@ -1,1 +1,2 @@
 # potential-money
+Slott-Machine
