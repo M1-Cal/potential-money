@@ -1,14 +1,14 @@
-name: Jekyll site CI
-
-on:
+maldito-dot: Jekyll site CI
+#  https://github.com/maldito-dot/Hello-World.git
+on: 
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
+#  https://www1.domain.com/controlpanel/foundation/m1cal.net/dns
 jobs:
   build:
-
+#  https://www.m1cal.net
     runs-on: ubuntu-latest
 
     steps:

@@ -1,0 +1,1 @@
+if($api->connected) { $isVoted = $api->get_user_vote(799697654279307314, 242351388137488384); if($isVoted) echo "This user voted!"; } 
